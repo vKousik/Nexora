@@ -2,13 +2,11 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Home from "./pages/Home/Home";
-
-// Temporary placeholder pages until you create real ones
-// const About = () => <div className="p-10 text-center text-2xl">About Page</div>;
-// const Services = () => <div className="p-10 text-center text-2xl">Services Page</div>;
-// const Portfolio = () => <div className="p-10 text-center text-2xl">Portfolio Page</div>;
-// const Contact = () => <div className="p-10 text-center text-2xl">Contact Page</div>;
-// const NotFound = () => <div className="p-10 text-center text-2xl">404 - Page Not Found</div>;
+// import About from "./pages/About/About";
+// import Services from "./pages/Services/Services";
+// import Portfolio from "./pages/Portfolio/Portfolio";
+// import Contact from "./pages/Contact/Contact";
+// import NotFound from "./pages/NotFound/NotFound";
 
 const App = () => {
   return (
