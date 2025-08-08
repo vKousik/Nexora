@@ -1,9 +1,10 @@
 # Nexora
-<h1 align="center">🌟 My React Portfolio Website 🌟</h1>
+<h1 align="center">✨ Nexora — Modern Company Showcase Website ✨</h1>
 
 <p align="center">
-  <b>A modern, responsive and eye-catching portfolio website built with React, Vite & Tailwind CSS</b>  
+  <i>A sleek, responsive, and high-performance web experience designed to highlight Nexora’s brand, services, and portfolio with elegance and impact.</i>
 </p>
+
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-18.0-blue?logo=react" alt="React Badge" />
@@ -38,7 +39,7 @@
 
 ```bash
 # 1️⃣ Clone this repository
-git clone https://github.com/yourusername/react-portfolio.git
+git clone https://github.com/vKousik/Nexora.git
 cd react-portfolio
 
 # 2️⃣ Install dependencies
@@ -48,9 +49,7 @@ npm install
 npm run dev
 
 📂 Project Structure
-bash
-Copy
-Edit
+
 src/
  ├── components/       # Navbar, Footer, Section components
  ├── pages/            # Home, About, Services, etc.
