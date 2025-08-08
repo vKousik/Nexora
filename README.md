@@ -40,7 +40,7 @@
 ```bash
 # 1️⃣ Clone this repository
 git clone https://github.com/vKousik/Nexora.git
-cd react-portfolio
+cd Nexora
 
 # 2️⃣ Install dependencies
 npm install
