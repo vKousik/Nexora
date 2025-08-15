@@ -6,20 +6,34 @@ const HeroSection = () => {
     <section className="w-full text-white relative h-screen overflow-hidden">
       {/* DarkVeil Background */}
       <div className="absolute inset-0">
-        <DarkVeil />
+        <DarkVeil 
+        speed={5}
+  scale={1}
+  color="#9F7A7A"
+  noiseIntensity={0.4}
+  rotation={0} />
       </div>
 
       {/* Content */}
       <div className="relative max-w-6xl mx-auto px-4 text-center flex flex-col justify-center items-center h-full z-10">
         <h1
-          className="text-4xl md:text-6xl font-bold mb-6"
-          style={{
-            color: "white",
-            textShadow: "0 4px 20px rgba(0,0,0,0.5)",
-          }}
-        >
-          Welcome to <span className="text-yellow-300">Nexora</span>
-        </h1>
+      style={{
+        color: "white",
+        textShadow: "0 4px 20px rgba(0,0,0,0.5)",
+      }}
+      className="text-4xl md:text-6xl font-bold mb-6"
+    >
+      Welcome to   {" "}
+      <span
+        style={{
+          fontFamily: '"TAN - PEARL", serif',
+          fontSize: "4rem",
+          color: "#F5E6D3",
+        }}
+      >
+        NEXORA
+      </span>
+    </h1>
         <p
           className="text-lg md:text-xl max-w-2xl mx-auto mb-10"
           style={{

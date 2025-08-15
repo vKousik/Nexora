@@ -1,1 +1,7 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "TAN - PEARL";
+  src: url("/fonts/tan-pearl.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
