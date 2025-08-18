@@ -106,23 +106,23 @@ const Home = () => {
       {/* Testimonials with glassmorphism */}
       <section 
         ref={addToRefs}
-        className="py-16 bg-gradient-to-br from-amber-500 via-orange-600 to-red-600 bg-opacity-90 section-transition relative"
+        className="py-6 mb-10 bg-black-500 bg-opacity-90 section-transition relative"
       >
         {/* Transition gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-indigo-700/30 pointer-events-none"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-rose-500/30 pointer-events-none"></div>
+
         <div className="relative z-10">
           <TestimonialsPreview />
         </div>
       </section>
+      <div className="w-full border-t border-gray-700 my-12"></div>
 
       {/* Contact CTA with pulse effect */}
       <section 
         ref={addToRefs}
-        className="py-16 bg-gradient-to-br from-rose-500 via-pink-600 to-purple-700 section-transition relative"
+        className=" bg-black-100 section-transition relative"
       >
         {/* Final transition gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-red-600/40 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-black-500 pointer-events-none"></div>
         <div className="relative z-10">
           <ContactBanner />
         </div>
