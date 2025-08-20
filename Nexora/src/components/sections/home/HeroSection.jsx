@@ -10,7 +10,7 @@ const HeroSection = () => {
         speed={5}
   scale={1}
   color="#9F7A7A"
-  noiseIntensity={0.4}
+  noiseIntensity={0.9}
   rotation={0} />
       </div>
 
