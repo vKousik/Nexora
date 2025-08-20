@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { ArrowRight, Mail, Phone, Calendar } from "lucide-react";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const ContactBanner = () => {
   const [hoveredButton, setHoveredButton] = useState(null);
+   const navigate = useNavigate();
 
   return (
     <section className="bg-gradient-to-b from-black to-gray-900 relative overflow-hidden py-20">
@@ -60,6 +63,7 @@ const ContactBanner = () => {
             className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold transition-all duration-300 hover:from-blue-700 hover:to-purple-700 hover:scale-105 hover:shadow-2xl overflow-hidden"
             onMouseEnter={() => setHoveredButton('contact')}
             onMouseLeave={() => setHoveredButton(null)}
+            onClick={() => navigate("/contact")}
           >
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             <div className="relative flex items-center" style={{ fontFamily: "'Edu NSW ACT Cursive', cursive"}}>
@@ -79,8 +83,8 @@ const ContactBanner = () => {
             <span className="text-sm">nexora.website@gmail.com</span>
           </div>
           <div className="flex items-center">
-            <Phone className="w-4 h-4 mr-2 text-purple-400" />
-            <span className="text-sm">+1 (555) 123-4567</span>
+            <IoLogoWhatsapp className="w-4 h-4 mr-2 text-purple-400" />
+            <span className="text-sm">+91 6291737343</span>
           </div>
           <div className="flex items-center">
             <Calendar className="w-4 h-4 mr-2 text-pink-400" />
@@ -95,4 +99,4 @@ const ContactBanner = () => {
   );
 };
 
-export default ContactBanner;
+export default ContactBanner

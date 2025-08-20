@@ -4,7 +4,7 @@ import ServicesPreview from "../../components/sections/home/ServicesPreview";
 import PortfolioPreview from "../../components/sections/home/PortfolioPreview";
 import TestimonialsPreview from "../../components/sections/home/TestimonialsPreview";
 import ContactBanner from "../../components/sections/home/ContactBanner";
-
+import Team from '../Portfolio/Portfolio';
 const Home = () => {
   const sectionsRef = useRef([]);
 
@@ -71,7 +71,7 @@ const Home = () => {
       `}</style>
 
       {/* Hero with gradient and bold animations */}
-      <div 
+      <div id="home"
         ref={addToRefs}
         className="section-transition opacity-100 transform translate-y-0"
       >
@@ -79,7 +79,7 @@ const Home = () => {
       </div>
 
       {/* Neon-glow services section */}
-      <section 
+      <section id="services"
         ref={addToRefs}
         className="bg-black-600 section-transition relative"
       >
@@ -91,7 +91,7 @@ const Home = () => {
       </section>
 
       {/* Portfolio with card hover effects */}
-      <section 
+      <section id="portfolio"
         ref={addToRefs}
         className="py-16 bg-black-500 section-transition relative"
       >
@@ -102,9 +102,21 @@ const Home = () => {
           <PortfolioPreview />
         </div>
       </section>
+      <section id="about"
+        ref={addToRefs}
+        className=" bg-black-100 section-transition relative"
+      >
+        {/* Final transition gradient */}
+        <div className="absolute inset-0 bg-black-500 pointer-events-none"></div>
+        <div className="relative z-10">
+          <Team/>
+        </div>
+      </section>
+      {/* Divider Line */}
+     <div className="w-full border-t border-gray-700 my-12"></div>
 
       {/* Testimonials with glassmorphism */}
-      <section 
+      <section id="about"
         ref={addToRefs}
         className="py-6 mb-10 bg-black-500 bg-opacity-90 section-transition relative"
       >
@@ -114,10 +126,14 @@ const Home = () => {
           <TestimonialsPreview />
         </div>
       </section>
+      
       <div className="w-full border-t border-gray-700 my-12"></div>
+      
+       
+
 
       {/* Contact CTA with pulse effect */}
-      <section 
+      <section id="contact"
         ref={addToRefs}
         className=" bg-black-100 section-transition relative"
       >
