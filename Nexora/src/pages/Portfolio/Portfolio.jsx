@@ -4,7 +4,8 @@ import { Linkedin, Twitter, Github } from "lucide-react";
 const team = [
   {
     name: "Abir Paul",
-    role: "Co-Founder & Full Stack Developer",
+    role: "Co-Founder ",
+    skill:"Full Stack Developer , Database Designer",
     img: "https://avatars.githubusercontent.com/u/127186823?v=4",
     socials: {
       linkedin: "https://www.linkedin.com/in/abir-paul-1b6773249/",
@@ -14,7 +15,8 @@ const team = [
   },
   {
     name: "Priti Giri",
-    role: "Co-Founder & UI/UX Designer & Backend Developer",
+    role: "Co-Founder",
+    skill:"UI/UX Designer & Backend Developer",
     img: "https://avatars.githubusercontent.com/u/196339929?v=4",
     socials: {
       linkedin: "https://www.linkedin.com/in/priti-giri-8b507b254/",
@@ -24,7 +26,8 @@ const team = [
   },
   {
     name: "Subhradeep Bhattacharya",
-    role: "Co-Founder & UI/UX Designer & Project Manager & Business Analyst & Full Stack Developer",
+    role: "Co-Founder",
+    skill:" UI/UX Designer & Project Manager & Business Analyst & Full Stack Developer",
     img: "https://avatars.githubusercontent.com/u/128257457?v=4",
     socials: {
       linkedin: "https://www.linkedin.com/in/subhradeep-bhattacharya/",
@@ -33,8 +36,9 @@ const team = [
     },
   },
   {
-    name: "Kaushik Mondal",
-    role: "Co-Founder & Backend Developer & Database Designer",
+    name: "Kousik Mondal",
+    role: "Co-Founder ",
+    skill:" Backend Developer & Database Designer",
     img: "https://avatars.githubusercontent.com/u/177249496?v=4",
     socials: {
       linkedin: "https://www.linkedin.com/in/kousik-mondal-b46688356/", // <-- corrected

@@ -5,6 +5,7 @@ import PortfolioPreview from "../../components/sections/home/PortfolioPreview";
 import TestimonialsPreview from "../../components/sections/home/TestimonialsPreview";
 import ContactBanner from "../../components/sections/home/ContactBanner";
 import Team from '../Portfolio/Portfolio';
+import Navbar from '../../components/layout/Navbar';
 const Home = () => {
   const sectionsRef = useRef([]);
 
@@ -48,6 +49,7 @@ const Home = () => {
 
   return (
     <div className="bg-black text-white overflow-hidden">
+      <Navbar/>
       {/* Add custom CSS for smooth scrolling and animations */}
       <style jsx>{`
         html {
