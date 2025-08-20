@@ -4,26 +4,46 @@ import CardSwap, { Card } from "../../ui/CardSwap";
 const ServicesPreview = () => {
   const [activeCardIndex, setActiveCardIndex] = useState(0);
   
-  const services = [
-    {
-      title: "Web Development",
-      desc: "High-quality, responsive websites using modern tech.",
-      img: "/images/webdev.png",
-      bg: "from-purple-500/80 via-indigo-500/80 to-blue-500/80",
-    },
-    {
-      title: "UI/UX Design",
-      desc: "Intuitive and beautiful designs for seamless user experience.",
-      img: "/images/uiux.png",
-      bg: "from-pink-500/80 via-rose-500/80 to-orange-400/80",
-    },
-    {
-      title: "App Development",
-      desc: "Cross-platform mobile apps with smooth performance.",
-      img: "/images/appdev.png",
-      bg: "from-green-500/80 via-emerald-500/80 to-teal-400/80",
-    },
-  ];
+const services = [
+  {
+    title: "Custom Website",
+    desc: "Tailor-made websites designed to match your unique brand and goals.",
+    img: "/images/customweb.png",
+    bg: "from-purple-500/80 via-indigo-500/80 to-blue-500/80",
+  },
+  
+  {
+    title: "Business Website",
+    desc: "Professional websites to showcase your services and grow your presence.",
+    img: "/images/buissweb.png",
+    bg: "from-green-500/80 via-emerald-500/80 to-teal-400/80",
+  },
+  {
+    title: "Maintenance & Support",
+    desc: "Reliable ongoing updates, bug fixes, and technical assistance.",
+    img: "/images/maintenance.png",
+    bg: "from-yellow-500/80 via-amber-500/80 to-orange-400/80",
+  },
+  {
+    title: "Website Redesign",
+    desc: "Modern redesigns to give your website a fresh, engaging look.",
+    img: "/images/redesignweb.png",
+    bg: "from-blue-500/80 via-cyan-500/80 to-sky-400/80",
+  },
+  {
+    title: "E-commerce Website",
+    desc: "Robust online stores with secure payments and smooth shopping experiences.",
+    img: "/images/ecommweb.png",
+    bg: "from-pink-500/80 via-rose-500/80 to-orange-400/80",
+  },
+  {
+    title: "SEO Optimization",
+    desc: "Boost visibility and rank higher on search engines with proven strategies.",
+    img: "/images/seooptiweb.png",
+    bg: "from-indigo-500/80 via-violet-500/80 to-purple-400/80",
+  },
+];
+
 
   return (
     <section className="bg-black-500 py-26">
@@ -47,7 +67,7 @@ const ServicesPreview = () => {
         <div style={{ height: "400px", position: "relative" , marginBottom:"6px"}}>
           <CardSwap
             cardDistance={60}
-            verticalDistance={70}
+            verticalDistance={65}
             delay={5000}
             pauseOnHover={false}
             onCardChange={(index) => setActiveCardIndex(index)}

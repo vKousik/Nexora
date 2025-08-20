@@ -6,11 +6,12 @@ const IMGS = [
   "/images/image1.png",
   "/images/image2.jpg",
   "/images/image3.png",
+  "/images/image4.jpg",
+  "/images/image5.jpg",
+  "/images/image1.png",
   "/images/image2.jpg",
-  "/images/image1.png",
-  "/images/image3.png",
-  "/images/image1.png",
-  "/images/image3.png",
+  "/images/image4.jpg",
+  "/images/image5.jpg",
 ];
 
 const RollingGallery = ({ autoplay = false, pauseOnHover = false, images = [] }) => {
