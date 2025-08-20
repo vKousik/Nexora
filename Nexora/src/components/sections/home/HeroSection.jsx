@@ -10,11 +10,11 @@ const HeroSection = () => {
       {/* DarkVeil Background */}
       <div className="absolute inset-0">
         <DarkVeil 
-        speed={5}
-  scale={1}
-  color="#9F7A7A"
-  noiseIntensity={0.9}
-  rotation={0} />
+        colorStops={["#4b1a73", "#8382d9", "#2321ad"]}
+  blend={0.5}
+  amplitude={1.0}
+  speed={0.5}
+/>
       </div>
 
       {/* Content */}
@@ -51,9 +51,7 @@ const HeroSection = () => {
           <button className="px-6 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-200 transition" onClick={() => navigate("/contact")}>
             Hire Us
           </button>
-          <button className="px-6 py-3 bg-black/40 text-white border border-white rounded-full hover:bg-white hover:text-black transition">
-            View Work
-          </button>
+          
         </div>
       </div>
     </section>

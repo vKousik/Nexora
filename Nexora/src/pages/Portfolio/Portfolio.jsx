@@ -7,9 +7,9 @@ const team = [
     role: "Co-Founder & Full Stack Developer",
     img: "https://avatars.githubusercontent.com/u/127186823?v=4",
     socials: {
-      linkedin: "#",
-      twitter: "#",
-      github: "#",
+      linkedin: "https://www.linkedin.com/in/abir-paul-1b6773249/",
+      
+      github: "https://github.com/Abirpaul007",
     },
   },
   {
@@ -17,19 +17,19 @@ const team = [
     role: "Co-Founder & UI/UX Designer & Backend Developer",
     img: "https://avatars.githubusercontent.com/u/196339929?v=4",
     socials: {
-      linkedin: "#",
-      twitter: "#",
-      github: "#",
+      linkedin: "https://www.linkedin.com/in/priti-giri-8b507b254/",
+      
+      github: "https://github.com/priti0317",
     },
   },
   {
     name: "Subhradeep Bhattacharya",
-    role: "Co-Founder & UI/UX Designer & Project Manager & Buissness Analyser & Full stack developer",
+    role: "Co-Founder & UI/UX Designer & Project Manager & Business Analyst & Full Stack Developer",
     img: "https://avatars.githubusercontent.com/u/128257457?v=4",
     socials: {
-      linkedin: "#",
-      twitter: "#",
-      github: "#",
+      linkedin: "https://www.linkedin.com/in/subhradeep-bhattacharya/",
+      
+      github: "https://github.com/subhradeep09",   // <-- corrected
     },
   },
   {
@@ -37,64 +37,63 @@ const team = [
     role: "Co-Founder & Backend Developer & Database Designer",
     img: "https://avatars.githubusercontent.com/u/177249496?v=4",
     socials: {
-      linkedin: "#",
-      twitter: "#",
-      github: "#",
+      linkedin: "https://www.linkedin.com/in/kousik-mondal-b46688356/", // <-- corrected
+      
+      github: "https://github.com/vKousik",
     },
   },
 ];
 
+function SocialLinks({ socials }) {
+  return (
+    <div className="flex gap-6">
+      <a href={socials.linkedin} target="_blank" rel="noopener noreferrer">
+        <Linkedin className="w-6 h-6 text-gray-400 hover:text-blue-500 transition duration-300" />
+      </a>
+      
+      <a href={socials.github} target="_blank" rel="noopener noreferrer">
+        <Github className="w-6 h-6 text-gray-400 hover:text-gray-200 transition duration-300" />
+      </a>
+    </div>
+  );
+}
+
 export default function Team() {
   return (
     <div className="bg-black text-white min-h-screen">
-      {/* Hero Section */}
-      <section className="text-center py-16 px-6">
+      <section className="text-center py-20 px-6 relative">
         <motion.h1
-          className="text-5xl font-bold mb-6  mt-6" 
-           style={{ fontFamily: "'Comfortaa', sans-serif" }}
+          className="text-6xl font-bold mb-6 mt-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           Meet Our Team
         </motion.h1>
-        <p className="text-lg max-w-2xl mx-auto text-gray-400"  >
+        <p className="text-lg max-w-3xl mx-auto text-gray-400">
           We are a passionate group of developers, designers, and creators
           building digital solutions to help businesses grow.
         </p>
       </section>
 
-      {/* Team Members Grid */}
-      <section className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 px-8 pb-16">
+      <section className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 px-8 pb-20">
         {team.map((member, i) => (
           <motion.div
             key={i}
-            className="bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition flex flex-col items-center"
-            whileHover={{ scale: 1.05 }}
+            className="relative rounded-2xl p-8 bg-white/5 backdrop-blur-lg border border-gray-800 shadow-lg hover:shadow-2xl hover:border-indigo-500 transition-all duration-300 flex flex-col items-center text-center"
+            whileHover={{ y: -10, scale: 1.05 }}
           >
             <img
               src={member.img}
               alt={member.name}
-              className="w-28 h-28 rounded-full mb-4 border-4 border-gray-700"
+              className="w-28 h-28 rounded-full mb-4 border-4 border-gray-700 shadow-lg"
             />
             <h3 className="text-xl font-semibold">{member.name}</h3>
-            <p className="text-gray-400 text-sm mb-4">{member.role}</p>
-            <div className="flex gap-4">
-              <a href={member.socials.linkedin} target="_blank">
-                <Linkedin className="w-5 h-5 text-gray-400 hover:text-indigo-500 transition" />
-              </a>
-              <a href={member.socials.twitter} target="_blank">
-                <Twitter className="w-5 h-5 text-gray-400 hover:text-indigo-500 transition" />
-              </a>
-              <a href={member.socials.github} target="_blank">
-                <Github className="w-5 h-5 text-gray-400 hover:text-indigo-500 transition" />
-              </a>
-            </div>
+            <p className="text-gray-400 text-sm mb-6">{member.role}</p>
+            <SocialLinks socials={member.socials} />
           </motion.div>
         ))}
       </section>
-
-      
     </div>
   );
 }

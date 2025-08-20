@@ -15,20 +15,18 @@ const Footer = () => {
             <p className="text-sm text-gray-400 mb-6">
               Your vision, our code. We craft digital solutions that bring ideas to life.
             </p>
-            <button className="border border-gray-600 text-gray-300 px-6 py-3 rounded hover:bg-gray-800 hover:border-gray-500 transition-all duration-300">
-              Start 14 Days Free Trial
-            </button>
+           
           </div>
 
           {/* Quick Links */}
           <div>
             <h3 className="text-white font-medium mb-6">Quick Links</h3>
             <ul className="space-y-4 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors cursor-pointer">Home</a></li>
-              <li><a href="#" className="hover:text-white transition-colors cursor-pointer">About</a></li>
-              <li><a href="#" className="hover:text-white transition-colors cursor-pointer">Services</a></li>
-              <li><a href="#" className="hover:text-white transition-colors cursor-pointer">Portfolio</a></li>
-              <li><a href="#" className="hover:text-white transition-colors cursor-pointer">Contact</a></li>
+              <li><a href="#home" className="hover:text-white transition-colors cursor-pointer">Home</a></li>
+              <li><a href="#about" className="hover:text-white transition-colors cursor-pointer">About</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors cursor-pointer">Services</a></li>
+              <li><a href="#portfolio" className="hover:text-white transition-colors cursor-pointer">Portfolio</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors cursor-pointer">Contact</a></li>
             </ul>
           </div>
 
