@@ -5,4 +5,15 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss()],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ['react', 'react-dom'],
+          ui: ['lucide-react', 'framer-motion'],
+          // charts: ['echarts', 'recharts'], // move heavy chart libs
+        },
+      },
+    },
+  },
 })

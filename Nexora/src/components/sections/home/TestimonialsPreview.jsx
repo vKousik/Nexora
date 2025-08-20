@@ -9,8 +9,8 @@ const ClientReviewsMasonry = () => {
   const reviews = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      role: "CEO, TechFlow",
+      name: " Mr. Sarat Aggarwal",
+      role: "CEO, ",
       category: "Design",
       subcategory: "UI/UX",
       description: "Beautiful user interfaces",
@@ -21,8 +21,8 @@ const ClientReviewsMasonry = () => {
     },
     {
       id: 2,
-      name: "Michael Chen",
-      role: "CTO, InnovateLab",
+      name: " Mr. Ratan Singha",
+      role: "Founder, Urbnexux",
       category: "Performance",
       subcategory: "Speed",
       description: "Lightning-fast loading",
@@ -33,8 +33,8 @@ const ClientReviewsMasonry = () => {
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      role: "Founder, StartupXYZ",
+      name: "Mr. Sukanta Saha",
+      role: "Founder, R.R Logistics",
       category: "Development",
       subcategory: "Full-Stack",
       description: "Complete web solutions",
@@ -45,8 +45,8 @@ const ClientReviewsMasonry = () => {
     },
     {
       id: 4,
-      name: "David Kim",
-      role: "Product Manager, DataCorp",
+      name: " Ms. Davika Ray",
+      role: "Founder, DataCorp",
       category: "Responsive",
       subcategory: "Mobile-First",
       description: "Perfect on every device",
