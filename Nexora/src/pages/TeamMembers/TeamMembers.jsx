@@ -3,9 +3,9 @@ import { Linkedin, Twitter, Github } from "lucide-react";
 
 const team = [
   {
-    name: "Abir Paul",
-    role: "Co-Founder & Full Stack Developer",
-    img: "https://avatars.githubusercontent.com/u/127186823?v=4",
+    name: "Aarav Sharma",
+    role: "Founder & CEO",
+    img: "https://randomuser.me/api/portraits/men/32.jpg",
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -13,9 +13,9 @@ const team = [
     },
   },
   {
-    name: "Priti Giri",
-    role: "Co-Founder & UI/UX Designer & Backend Developer",
-    img: "https://avatars.githubusercontent.com/u/196339929?v=4",
+    name: "Priya Mehta",
+    role: "Lead Developer",
+    img: "https://randomuser.me/api/portraits/women/44.jpg",
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -23,9 +23,9 @@ const team = [
     },
   },
   {
-    name: "Subhradeep Bhattacharya",
-    role: "Co-Founder & UI/UX Designer & Project Manager & Buissness Analyser & Full stack developer",
-    img: "https://avatars.githubusercontent.com/u/128257457?v=4",
+    name: "Rohan Verma",
+    role: "UI/UX Designer",
+    img: "https://randomuser.me/api/portraits/men/76.jpg",
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -33,9 +33,9 @@ const team = [
     },
   },
   {
-    name: "Kaushik Mondal",
-    role: "Co-Founder & Backend Developer & Database Designer",
-    img: "https://avatars.githubusercontent.com/u/177249496?v=4",
+    name: "Sneha Patel",
+    role: "Marketing Head",
+    img: "https://randomuser.me/api/portraits/women/68.jpg",
     socials: {
       linkedin: "#",
       twitter: "#",
@@ -50,15 +50,14 @@ export default function Team() {
       {/* Hero Section */}
       <section className="text-center py-16 px-6">
         <motion.h1
-          className="text-5xl font-bold mb-6  mt-6" 
-           style={{ fontFamily: "'Comfortaa', sans-serif" }}
+          className="text-5xl font-bold mb-6"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           Meet Our Team
         </motion.h1>
-        <p className="text-lg max-w-2xl mx-auto text-gray-400"  >
+        <p className="text-lg max-w-2xl mx-auto text-gray-400">
           We are a passionate group of developers, designers, and creators
           building digital solutions to help businesses grow.
         </p>
@@ -94,7 +93,19 @@ export default function Team() {
         ))}
       </section>
 
-      
+      {/* Call to Action */}
+      <section className="text-center py-16 px-6 bg-gray-950">
+        <h2 className="text-3xl font-bold mb-4">Want to Work With Us?</h2>
+        <p className="text-lg text-gray-400 mb-6">
+          Join our growing team and help us build amazing digital experiences.
+        </p>
+        <a
+          href="/careers"
+          className="bg-indigo-600 text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:bg-indigo-500 transition"
+        >
+          Explore Careers
+        </a>
+      </section>
     </div>
   );
 }

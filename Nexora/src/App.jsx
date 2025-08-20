@@ -3,8 +3,9 @@ import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
-// import Services from "./pages/Services/Services";
-// import Portfolio from "./pages/Portfolio/Portfolio";
+import Services from "./pages/Services/Services";
+import TeamMembers from "./pages/TeamMembers/TeamMembers";
+import Portfolio from "./pages/Portfolio/Portfolio";
 // import Contact from "./pages/Contact/Contact";
 // import NotFound from "./pages/NotFound/NotFound";
 
@@ -16,9 +17,11 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
            <Route path="/about" element={<About />} />
-          {/*<Route path="/services" element={<Services />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/teammembers" element={<TeamMembers />} />
+
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
+          {/*<Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </main>
