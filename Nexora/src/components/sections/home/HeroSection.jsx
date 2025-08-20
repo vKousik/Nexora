@@ -1,7 +1,10 @@
 import React from "react";
 import DarkVeil from "../../ui/DarkVeil";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="w-full text-white relative h-screen overflow-hidden">
       {/* DarkVeil Background */}
@@ -45,7 +48,7 @@ const HeroSection = () => {
           life.
         </p>
         <div className="flex justify-center gap-4">
-          <button className="px-6 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-200 transition">
+          <button className="px-6 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-200 transition" onClick={() => navigate("/contact")}>
             Hire Us
           </button>
           <button className="px-6 py-3 bg-black/40 text-white border border-white rounded-full hover:bg-white hover:text-black transition">
